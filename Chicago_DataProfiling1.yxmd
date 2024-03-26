@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Food_Inspections_20240223.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="DBA Name" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="AKA Name" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="License #" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Risk" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Address" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="City" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="State" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Zip" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Results" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Violations" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Latitude" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Longitude" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+            <Field name="Location" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Food_Inspections_20240223.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TableStyle>Quoted</TableStyle>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Table>stg_Chicago_Alteryx</Table>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <OutputOption>Overwrite</OutputOption>
+            <Connection DcmType="ConnectionId">38703ec8-0bd9-47ea-9b39-c95a3eb2caa6</Connection>
+            <Projection />
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:SHUBH
+Table=stg_Chicago_Alteryx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\agarw\AppData\Local\Temp\Engine_9816_65ce12c1c83a42448f542c0893f01be5_\Engine_9816_785db7b452b03946b7b8c2e7237a052e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Chicago_DataProfiling1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1aa4d5f0-6828-4066-8896-dcb92886abf7" />
+      <Telemetry>
+        <PreviousWorkflowId value="8d5890ae-f7e8-488e-9b10-681927b3655d" />
+        <OriginWorkflowId value="a76c3310-70c5-439d-8e7b-af44eea51bea" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="390" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="522" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="690" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TableStyle>Quoted</TableStyle>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Table>stg_Dallas_Alteryx</Table>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <OutputOption>Create</OutputOption>
+            <Connection DcmType="ConnectionId">ac059a5c-8fd8-4f76-9679-42011f89ebf0</Connection>
+            <Projection />
+            <PostSQL />
+            <TransactionSize>1000</TransactionSize>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:SHUBH
+Table=stg_Dallas_Alteryx</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="402" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\agarw\AppData\Local\Temp\Engine_12508_bf513f8dfbf899489b6dabdfe8174106_\Engine_12508_1d33775ab2e92847b585a1f17ab9dd76~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Inspection Score" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Street Number" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Street Name" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Street Direction" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Street Type" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Street Unit" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Street Address" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 1" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 1" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 1" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 1" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 2" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 2" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 2" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 2" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 3" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 3" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 3" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 3" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 4" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 4" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 4" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 4" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 5" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 5" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 5" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 5" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 6" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 6" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 6" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 6" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 7" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 7" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 7" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 7" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 8" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 8" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 8" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 8" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 9" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 9" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 9" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 9" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 10" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 10" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 10" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 10" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 11" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 11" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 11" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 11" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 12" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 12" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 12" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 12" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 13" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 13" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 13" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 13" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 14" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 14" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 14" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 14" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 15" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 15" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 15" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 15" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 16" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 16" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 16" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 16" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 17" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 17" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 17" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 17" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 18" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 18" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 18" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 18" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 19" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 19" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 19" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 19" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 20" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 20" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 20" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation  Memo - 20" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 21" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 21" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 21" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 21" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 22" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 22" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 22" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 22" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 23" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 23" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 23" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 23" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 24" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 24" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 24" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 24" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Description - 25" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Points - 25" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Detail - 25" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Violation Memo - 25" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Inspection Month" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Inspection Year" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+            <Field name="Lat Long Location" size="254" source="File: C:\Users\agarw\OneDrive\Documents\DADABI\Mid_term_project\Restaurant_and_Food_Establishment_Inspections__October_2016_to_Present__20240223 (1).tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dallas_Data_Profiling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ee2fe74d-35e9-4b4c-97b3-6f2e917d1bfb" />
+      <Telemetry>
+        <PreviousWorkflowId value="0babfe50-3558-4398-8e98-5c1507ba87c4" />
+        <OriginWorkflowId value="0564ae3b-0b68-46cd-bd9d-cdead3019c1a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
