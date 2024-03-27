@@ -36,6 +36,8 @@ Restaurant and Food Establishment Inspections (October 2016 to Present) | https:
 
 ![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/fc79fbcb-2e37-4c2b-b980-1d18c66ea007)
 
+<img width="452" alt="image" src="https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/c1fdefe5-218e-47fc-beb0-f36cddfa6309">
+
 
 ![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/43bde039-635f-434d-ba13-860a9a427e9f)
 
