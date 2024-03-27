@@ -1,16 +1,12 @@
 # ChicagoDallas-FoodInspection-DataEngineeringProject
 Software's to use: ER Studio/Navicat, Talend, Alteryx, Python, SQL Server (Azure/Local), MySQL, Power BI , Tableau  
 
-![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/fc79fbcb-2e37-4c2b-b980-1d18c66ea007)
-
 
 # End-to-End BI Project: ETL Process
 
 ## Overview
 
 This repository contains the implementation details for an end-to-end Business Intelligence (BI) project. The project focuses on extracting, transforming, and loading (ETL) data for analytical reporting. It encompasses data analysis, understanding data properties, data cleaning, and generating reports based on an integration schema.
-
-![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/43bde039-635f-434d-ba13-860a9a427e9f)
 
 
 ## Tools Used
@@ -38,4 +34,8 @@ Food Inspections | City of Chicago |https://data.cityofchicago.org/Health-Human-
 
 Restaurant and Food Establishment Inspections (October 2016 to Present) | https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct/about_data
 
+![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/fc79fbcb-2e37-4c2b-b980-1d18c66ea007)
+
+
+![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/43bde039-635f-434d-ba13-860a9a427e9f)
 
