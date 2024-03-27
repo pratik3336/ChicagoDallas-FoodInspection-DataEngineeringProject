@@ -12,9 +12,6 @@ This repository contains the implementation details for an end-to-end Business I
 
 ![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/43bde039-635f-434d-ba13-860a9a427e9f)
 
-![image](https://github.com/pratik3336/ChicagoDallas-FoodInspection-DataEngineeringProject/assets/76115015/681b0672-0366-4b11-8021-e258410cbef4)
-
-
 
 ## Tools Used
 
